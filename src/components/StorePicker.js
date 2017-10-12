@@ -9,7 +9,7 @@ function clickAlert(e) {
   }
   else {
     {/* put the name into the chat panel */}
-    alert('enter chat!');
+    window.location.replace("/store/chat");
     var element = document.querySelector(".message-container");
     var newUserName = React.createElement('div');
     {/*newUserName.innerHTML = chatUser;*/}
