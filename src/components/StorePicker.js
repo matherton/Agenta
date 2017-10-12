@@ -1,15 +1,32 @@
 import React from 'react';
-import { getFunName } from '../helpers';
+//import Header from './Header';
+
+function clickAlert(e) {
+  e.preventDefault();
+  var chatUser = document.querySelector('.enter input').value;
+  var submitAction = document.querySelector('button.chat-button');
+  if (!chatUser) {
+    alert("Please enter your Chat name!");
+  }
+  else {
+    {/* put the name into the chat panel */}
+    alert('enter chat!');
+    var element = document.querySelector(".message-container");
+    var newUserName = React.createElement('div');
+    {/*newUserName.innerHTML = chatUser;*/}
+    element.appendChild(newUserName);
+  }
+}
 
 class StorePicker extends React.Component {
 	render() {
 		return (
-			<form className="store-selector">
-				{ /* this is a JSX comment */}
-				<h2>Please enter a Store</h2>
-				<input type="text" required placeholder="Store Name" value={getFunName()} />
-				<button type="submit">Visit Store</button>
-			</form>
+			<section className="chat-container">
+        <form className="enter">
+          <input type="textbox" placeholder="Enter your name" required username={this.value} /><br />
+          <button type="submit" className="chat-button chat-orange" onClick={clickAlert}>Start chat</button>
+        </form>
+      </section>
 			)
 	}
 }

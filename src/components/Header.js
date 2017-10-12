@@ -3,17 +3,14 @@ import React from 'react';
 
 const Header = (props) => {
 		return(
-			<header className="top">
-				<h1>
-					Catch 
-					<span className="ofThe">
-						<span className="of">of</span>
-						<span className="the">the</span>
-					</span>
-					Day
-				</h1>
-				<h3 className="tagline"><span>{props.tagline}</span></h3>
-			</header>
+			<header className="App-header">
+        <img src="https://ajenta.net/wp-content/uploads/2015/07/ajenta_white2.png" className="mk-light-logo" alt="ajenta" />
+        <ul className="App-links">
+          <li><a href=''>Home</a></li>
+          <li><a href=''>Recordings</a></li>
+          <li><a href=''>Account</a></li>
+        </ul>
+      </header>
 		)
 }
 
