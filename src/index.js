@@ -11,42 +11,7 @@ var x = document.URL;
 var splitPoint = x.split('?');
 var justName = splitPoint.pop() || splitPoint.pop(); 
 
-/*var chatName = React.createClass({
-
-	let chatName = document.querySelector('.enter input').value;
-
-  getInitialState: function() {
-    return {value: ''};
-  },
-  onBlur: function(event) {
-    this.setState({value: event.target.value});
-  },
-  render: function() {
-    return <div>
-        <input type="text" onBlur={this.onBlur.bind(this)}/>
-        You typed: <code>{this.state.value}</code>
-      </div>
-  }
-});*/
-
 const Root = () => {
-
-		/*
-		setup callback to receive name from initial page (StorePicker.js)
-		constructor() {
-	    super();
-	    this.handleData = this.handleData.bind(this);
-	    this.state = {
-	      value: ''
-	    };
-	  }
-
-		handleData(data) {
-	    this.setState({
-	      value: data
-	    });
-	  }*/
-
 
 		return (
 			<section>

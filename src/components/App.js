@@ -3,6 +3,10 @@ import Inventory from './Inventory';
 import Order from './Order';
 import StorePicker from './StorePicker';
 
+var x = document.URL;
+var splitPoint = x.split('?');
+var justName = splitPoint.pop() || splitPoint.pop(); 
+
 class App extends React.Component {
 
 	handleChange(event) {
@@ -24,7 +28,7 @@ class App extends React.Component {
 	        <h1>Chat</h1>
 	      </header>
 	      <div className="message-container">
-	        <div className="message-title">{this.props.name}</div>
+	        <div className="message-title">{justName}</div>
 	        <div className="chat-bubble">chat message goes here</div>
 	        <div className="message-title">Roberto Lastname</div>
 	        <div className="chat-bubble">second chat message, maybe</div>
