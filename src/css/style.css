@@ -213,6 +213,7 @@ body {
   bottom: 10rem;
   color: #030418;
   text-align: right;
+  width: 255px;
 }
 
 .message-container .message-title {
@@ -250,6 +251,7 @@ body {
   width: auto;
   position: relative;
   float: right;
+  clear: both;
 }
 
 .chat-box {

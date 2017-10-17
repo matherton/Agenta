@@ -17,8 +17,6 @@ import React from 'react';
   }
 }*/
 
-var chatURL = window.location.href;
-
 class StorePicker extends React.Component {
 
 	constructor(props) {
