@@ -38,9 +38,11 @@ class App extends React.Component {
 		return (
 			
 			<section className="chat-panel">
-	      <header className="chat-header">
-	        <h1>Chat</h1>
-	      </header>
+				<a href="/" title="close chat" className="close-chat">
+		      <header className="chat-header">
+		        <h1>Chat</h1>
+		      </header>
+		     </a>
 	      <div className="message-container">
 	        <div className="message-title">Roberto Lastname</div>
 	        <div className="chat-bubble">chat message goes here</div>
