@@ -31,6 +31,7 @@ class App extends React.Component {
     chatBox.setAttribute('class', 'chat-bubble');
     chatBox.innerHTML = this.state.value;
     document.getElementsByClassName("message-title")[1].appendChild(chatBox);
+    document.querySelector('.chat-box').value = "";
   }
 
 	render() {
@@ -43,10 +44,10 @@ class App extends React.Component {
 	      <div className="message-container">
 	        <div className="message-title">Roberto Lastname</div>
 	        <div className="chat-bubble">chat message goes here</div>
-	        <div className="message-title">{justName}</div>
+	        <div className="message-title user">{justName}</div>
 	      </div>
 	      <form className="ChatPanel" onSubmit={this.handleSubmit}>
-		      <input type="textbox" value={this.state.value} onChange={this.handleChange} className="chat-box" placeholder="Your mesage here" />
+		      <textarea rows="4" cols="50" type="textbox" value={this.state.value} onChange={this.handleChange} className="chat-box" placeholder="Your mesage here" rows="4" cols="50"/>
 		      <button type="submit" className="chat-button chat-orange">Send</button>
 				</form>
 	    </section>
