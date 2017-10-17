@@ -217,6 +217,7 @@ body {
 
 .message-container .message-title {
   font-size: small;
+  clear: both;
 }
 
 .chat-panel .chat-button:before {
