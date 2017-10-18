@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #9e9ea0;
+  background: #86868a;
 }
 
 .App {
@@ -15,7 +15,7 @@ body {
 }
 
 .App-header {
-  background-color: #59595d;
+  background: rgba(0, 0, 0, 0.6);
   height:30px;
   padding: 20px;
   color: white;
@@ -92,8 +92,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-
-  background-color: #59595d;
+  background: rgba(0, 0, 0, 0.6);
   height: 210px;
   width: 60em;
   display: flex;
@@ -168,8 +167,8 @@ body {
 /* chat panel styles */
 .chat-panel {
   position: absolute;
-  background: #ceced0;
-  border-radius: .5rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 18px;
   height: 85%;
   width: 250px;
   right: 10px;
@@ -180,7 +179,7 @@ body {
 }
 
 .chat-header {
-  max-height: 2rem;
+  max-height: 3rem;
   border-bottom: 1px solid #fff;
   width: 100%;
   margin: 0 auto;
@@ -197,20 +196,24 @@ body {
 }
 
 .chat-header h1 {
-  font-size: 1.2rem;
-  margin-left: 2rem;
+  font-weight: 600;
+  font-size: 30pt;
+  margin-top: -5px;
+  margin-left: 3rem;
   color: #fff;
+  text-shadow: 7px 7px 4px #36363d;
 }
 
 .chat-header h1:before {
   background: url('../img/close_2x.png');
-  background-size: 21px 21px;
+  background-size: 35px 35px;
   background-repeat: no-repeat;
   position: absolute;
+  top: 16px;
   left: 1rem;
-  width: 21px;
-  height: 21px;
-  content:"";
+  width: 35px;
+  height: 35px;
+  content: "";
 }
 
 .message-container {
@@ -263,8 +266,8 @@ body {
   position: absolute;
   bottom: 3.8rem;
   left: 1rem;
-  padding-left: 1rem;
-  width: 14.8rem;
+  padding-left: .3rem;
+  width: 15.5rem;
   height: 5rem;
   border: none;
   border-radius: .2rem;
