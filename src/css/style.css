@@ -5,6 +5,10 @@ body {
   background: #86868a;
 }
 
+.main {
+  position: relative;
+}
+
 .App {
   text-align: center;
 }
@@ -101,9 +105,8 @@ body {
   justify-content: center;
   /* for horizontal alignment */
   align-items: center;
-  /* for vertical alignment 
-  margin: 0 auto;*/
-  margin: 200px 0 0 -480px;
+  /* for vertical alignment*/ 
+  margin: 205px 0 0 -30em;
 }
 
 .chat-container input {
