@@ -37,7 +37,7 @@ class StorePicker extends React.Component {
     alert('Ready to enter chat: ' + this.state.value + '!');
     const chatUser = this.state.value;
     console.log(chatUser);
-    window.location.replace("/store/chat?" +chatUser);
+    window.location.replace("/chat/chat?" +chatUser);
   }
 
 	render() {
