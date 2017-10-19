@@ -1,14 +1,8 @@
 import React from 'react';
-import Inventory from './Inventory';
-import Order from './Order';
-import StorePicker from './StorePicker';
 
 var x = document.URL;
 var splitPoint = x.split('?');
 var justName = splitPoint.pop() || splitPoint.pop();
-
-//var chatMessage = document.querySelector('.chat-area textarea');
-
 
 class App extends React.Component {
 
@@ -32,6 +26,9 @@ class App extends React.Component {
     chatBox.innerHTML = this.state.value;
     document.getElementsByClassName("message-title")[1].appendChild(chatBox);
 		document.querySelector('.chat-box').value = "";
+		//make the chat area always scroll to bottom when new comments are added
+		var objDiv = document.querySelector(".message-container");
+		objDiv.scrollTop = objDiv.scrollHeight;
   }
 
 	render() {

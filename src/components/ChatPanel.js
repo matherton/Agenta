@@ -1,23 +1,6 @@
 import React from 'react';
 
-/*function clickAlert(e) {
-  e.preventDefault();
-  var chatUser = document.querySelector('.enter input').value;
-  var submitAction = document.querySelector('button.chat-button');
-  if (!chatUser) {
-    alert("Please enter your chat name!");
-  }
-  else {
-    {/* put the name into the chat panel }*/
-    /*window.location.replace("/store/chat");
-    var element = document.querySelector(".message-container");
-    var newUserName = React.createElement('div');
-    {/*newUserName.innerHTML = chatUser;}*/
-    /*element.appendChild(newUserName);
-  }
-}*/
-
-class StorePicker extends React.Component {
+class ChatPanel extends React.Component {
 
 	constructor(props) {
     super(props);

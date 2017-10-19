@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 
 import './css/style.css';
 import App from './components/App';
-import StorePicker from './components/StorePicker';
+import ChatPanel from './components/ChatPanel';
 import NotFound from './components/NotFound';
 
 var x = document.URL;
@@ -27,7 +27,7 @@ const Root = () => {
 	      </header>
 				<BrowserRouter>
 					<div>
-						<Match exactly pattern='/' component={StorePicker} />
+						<Match exactly pattern='/' component={ChatPanel} />
 						<Match pattern='/chat/:storeId' component={App} />
 						<Miss component={NotFound} />
 					</div>
