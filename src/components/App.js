@@ -39,7 +39,7 @@ class App extends React.Component {
 		      <header className="chat-header">
 		        <h1>Chat</h1>
 		      </header>
-		     </a>
+		    </a>
 	      <div className="message-container">
 	        <div className="message-title">Roberto Lastname</div>
 	        <div className="chat-bubble">chat message goes here</div>

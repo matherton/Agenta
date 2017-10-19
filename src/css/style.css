@@ -224,6 +224,7 @@ body {
   content: "";
 }
 
+
 .message-container {
   position: absolute;
   bottom: 10rem;
@@ -231,7 +232,7 @@ body {
   font-size: 11pt;
   text-align: right;
   width: 255px;
-  max-height: 300px;
+  max-height: 60%;
   overflow: scroll;
 }
 
